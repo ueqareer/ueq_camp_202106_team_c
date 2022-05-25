@@ -4,7 +4,7 @@ import { binanceEvent } from "./binance";
 import { bybitEvent } from "./bybit";
 import { bitfinexEvent } from "./bitfinex";
 import { huobiEvent } from "./huobi";
-import { okexEvent } from "./okex";
+// import { okexEvent } from "./okex";
 import http from "http";
 import log from "../lib/log";
 
@@ -52,7 +52,7 @@ const WebSocketServer = (httpServer: http.Server) => {
         bybitEvent,
         bitfinexEvent,
         huobiEvent,
-        okexEvent,
+        // okexEvent,
     ];
 
     for (const eventEmitter of eventEmitterList) {
